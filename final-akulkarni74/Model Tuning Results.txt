@@ -1,0 +1,89 @@
+==== Tuning RFC with Bagging ====
+Test Score:  0.9936034115138592  with parameters:  {'max_depth': 10000, 'n_estimators': 10}
+Total time to run Grid Search:  381.30869483947754  seconds
+
+Generating Table
+    max_depth  n_estimators  Mean Train Score  Mean Test Score  Rank
+0         100            10          0.999667         0.994932    11
+1         100           100          1.000000         0.995999     3
+2         100          1000          1.000000         0.995999     4
+3         100         10000          1.000000         0.995732     6
+4        1000            10          0.999667         0.994399    12
+5        1000           100          1.000000         0.996267     2
+6        1000          1000          1.000000         0.995732     6
+7        1000         10000          1.000000         0.995732     6
+8       10000            10          0.999933         0.996799     1
+9       10000           100          1.000000         0.995999     4
+10      10000          1000          1.000000         0.995466    10
+11      10000         10000          1.000000         0.995732     6
+
+
+
+
+==== Tuning SVM ====
+Test Score:  0.8454157782515992  with parameters:  {'C': 0.001, 'kernel': 'poly'}
+Total time to run Grid Search:  275.80213713645935  seconds
+
+Generating Table
+           C   kernel  Mean Train Score  Mean Test Score  Rank
+0      0.001     poly          0.837290         0.837290     1
+1      0.001      rbf          0.837290         0.837290     1
+2      0.001  sigmoid          0.837290         0.837290     1
+3      0.100     poly          0.837290         0.837290     1
+4      0.100      rbf          0.837290         0.837290     1
+5      0.100  sigmoid          0.837290         0.837290     1
+6      1.000     poly          0.837290         0.837290     1
+7      1.000      rbf          0.837290         0.837290     1
+8      1.000  sigmoid          0.772802         0.775690    15
+9     10.000     poly          0.837290         0.837290     1
+10    10.000      rbf          0.837290         0.837290     1
+11    10.000  sigmoid          0.726059         0.730334    16
+12   100.000     poly          0.837290         0.837290     1
+13   100.000      rbf          0.837290         0.837290     1
+14   100.000  sigmoid          0.721325         0.727665    17
+15  1000.000     poly          0.837290         0.837290     1
+16  1000.000      rbf          0.837290         0.837290     1
+17  1000.000  sigmoid          0.721191         0.727398    18
+
+
+
+
+==== Tuning NN ====
+Test Score:  0.8454157782515992  with parameters:  {'hidden_layer_sizes': (3, 4), 'learning_rate': 'constant'}
+Total time to run Grid Search:  131.8554549217224  seconds
+
+Generating Table
+   hidden_layer_sizes learning_rate  Mean Train Score  Mean Test Score  Rank
+0              (3, 4)      constant          0.837290         0.837290     1
+1              (3, 4)    invscaling          0.702357         0.702443    18
+2              (3, 4)      adaptive          0.837290         0.837290     1
+3              (4, 3)      constant          0.702378         0.702357    21
+4              (4, 3)    invscaling          0.837290         0.837290     1
+5              (4, 3)      adaptive          0.837290         0.837290     1
+6              (5, 5)      constant          0.837290         0.837290     1
+7              (5, 5)    invscaling          0.702378         0.702357    21
+8              (5, 5)      adaptive          0.837290         0.837290     1
+9           (5, 5, 5)      constant          0.837290         0.837290     1
+10          (5, 5, 5)    invscaling          0.837290         0.837290     1
+11          (5, 5, 5)      adaptive          0.702378         0.702357    21
+12             (6, 6)      constant          0.702357         0.702443    18
+13             (6, 6)    invscaling          0.702378         0.702357    21
+14             (6, 6)      adaptive          0.837290         0.837290     1
+15          (6, 6, 6)      constant          0.837290         0.837290     1
+16          (6, 6, 6)    invscaling          0.837290         0.837290     1
+17          (6, 6, 6)      adaptive          0.837290         0.837290     1
+18             (7, 7)      constant          0.702378         0.702357    21
+19             (7, 7)    invscaling          0.837290         0.837290     1
+20             (7, 7)      adaptive          0.432533         0.432577    30
+21          (7, 7, 7)      constant          0.837290         0.837290     1
+22          (7, 7, 7)    invscaling          0.567467         0.567423    29
+23          (7, 7, 7)      adaptive          0.837290         0.837290     1
+24             (8, 8)      constant          0.837290         0.837290     1
+25             (8, 8)    invscaling          0.702378         0.702357    21
+26             (8, 8)      adaptive          0.837290         0.837290     1
+27          (8, 8, 8)      constant          0.702378         0.702357    21
+28          (8, 8, 8)    invscaling          0.702357         0.702443    18
+29          (8, 8, 8)      adaptive          0.702378         0.702357    21
+
+
+
